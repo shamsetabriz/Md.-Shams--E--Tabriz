@@ -1,0 +1,28 @@
+﻿@using Microsoft.Ajax.Utilities
+@using PartialViewPassingModel.Models
+@model IEnumerable<PartialViewPassingModel.Models.Product>
+@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+
+        </div>
+    </section>
+}
+@{
+    var products = Model;
+}
+
+<p>
+    
+   
+   
+    @{
+        @Html.Partial("~/Views/Shared/_PartialView1.cshtml",products);
+    }
+
+    </p>
+
+

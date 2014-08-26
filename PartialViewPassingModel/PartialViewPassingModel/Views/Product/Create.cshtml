@@ -1,0 +1,26 @@
+﻿
+@using PartialViewPassingModel.Models
+<h2>This is the main view</h2>
+@{
+    using (Html.BeginForm())
+        
+    {
+        @Html.LabelFor(model => model.Name);
+    
+    
+       @ Html.EditorFor(model => model.Name);
+    
+    
+    
+        @Html.LabelFor(model => model.Name);
+    
+    
+        @Html.EditorFor(model => model.Name);
+        <input type="submit" value="Create" />
+        
+    }
+  @Html.ActionLink("Back to the Home Page?","Index")
+}
+
+@Html.Partial("~/Views/Shared/partial1.cshtml")
+

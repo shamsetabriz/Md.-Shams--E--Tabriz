@@ -1,0 +1,13 @@
+﻿@model IEnumerable<PartialViewPassingModel.Models.Product>
+
+<h2>This is partial view</h2>
+@foreach (var product in Model)
+{
+    <table>
+        <tr>
+            <th>@product.Name</th>
+            <td>@product.Price</td>
+        </tr>
+
+    </table>
+}

@@ -1,0 +1,14 @@
+﻿@using PartialViewPassingModel.Models
+@model IEnumerable<PartialViewPassingModel.Models.Product>
+<h2>This is Ghorar Dim Page</h2>
+@Html.ActionLink("Create new Page","Create")
+@foreach (var product in Model)
+{
+    <table>
+        <tr>
+            <th>@product.Name</th>
+            <td>@product.Price</td>
+        </tr>
+
+    </table>
+
